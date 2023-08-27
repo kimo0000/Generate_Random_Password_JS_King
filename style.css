@@ -1,0 +1,97 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to bottom, #ef14, #ef5874);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 50%;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 0 15px;
+}
+
+form div input {
+    width: 100%;
+    border: 1px solid #615a5a;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+form div i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+}
+
+form div i:hover {
+    color: blueviolet;
+}
+
+form div i:active {
+    transform: scale(1.2);
+}
+
+form #generate {
+    padding: 6px;
+    width: fit-content;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form #generate:hover {
+    opacity: .5;
+}
+
+#popup {
+    position: absolute;
+    right: -120px;
+    bottom: 10px;
+    padding: 10px;
+    background-color: greenyellow;
+    border-radius: 8px;
+    border: 1px solid #000;
+    transition: right .3s;
+}
+
+#popup.show {
+    right: 10px;
+}
